@@ -1,0 +1,3 @@
+D:/newdir/sports-equipment-architecture-project/backend/build/CMakeFiles/sports_equipment_backend.dir
+D:/newdir/sports-equipment-architecture-project/backend/build/CMakeFiles/edit_cache.dir
+D:/newdir/sports-equipment-architecture-project/backend/build/CMakeFiles/rebuild_cache.dir

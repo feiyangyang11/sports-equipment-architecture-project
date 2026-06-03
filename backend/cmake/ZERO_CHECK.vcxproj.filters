@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\newdir\sports-equipment-architecture-project\backend\cmake\CMakeFiles\44da99a01f8011963a170dad1e301677\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BD34D94A-618F-3AA1-A960-A69B82767750}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
