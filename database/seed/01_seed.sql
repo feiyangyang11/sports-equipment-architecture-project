@@ -196,36 +196,6 @@ ON DUPLICATE KEY UPDATE
   `return_note` = VALUES(`return_note`),
   `updated_at` = VALUES(`updated_at`);
 
--- ------------------------------------------------------------------
--- damage_record
--- ------------------------------------------------------------------
-INSERT INTO `damage_record` (
-  `id`, `borrow_record_id`, `equipment_id`, `responsible_user_id`, `reported_by`,
-  `incident_type`, `severity`, `description`, `estimated_cost`, `handling_status`,
-  `resolution_note`, `reported_at`, `resolved_at`, `created_at`, `updated_at`
-) VALUES
-  (4001, 3002, 1004, 103, 2,
-   'DAMAGE', 'LOW', '归还时发现拍柄防滑胶轻微磨损，不影响继续使用。', 15.00, 'RESOLVED',
-   '已更换防滑胶并记录维护情况。', '2026-05-31 17:50:00', '2026-05-31 18:10:00',
-   '2026-05-31 17:50:00', '2026-05-31 18:10:00')
-ON DUPLICATE KEY UPDATE
-  `borrow_record_id` = VALUES(`borrow_record_id`),
-  `equipment_id` = VALUES(`equipment_id`),
-  `responsible_user_id` = VALUES(`responsible_user_id`),
-  `reported_by` = VALUES(`reported_by`),
-  `incident_type` = VALUES(`incident_type`),
-  `severity` = VALUES(`severity`),
-  `description` = VALUES(`description`),
-  `estimated_cost` = VALUES(`estimated_cost`),
-  `handling_status` = VALUES(`handling_status`),
-  `resolution_note` = VALUES(`resolution_note`),
-  `reported_at` = VALUES(`reported_at`),
-  `resolved_at` = VALUES(`resolved_at`),
-  `updated_at` = VALUES(`updated_at`);
-
--- ------------------------------------------------------------------
--- operation_log
--- ------------------------------------------------------------------
 INSERT INTO `operation_log` (
   `id`, `operator_user_id`, `operator_username`, `operation_type`,
   `target_type`, `target_id`, `operation_result`, `ip_address`,
@@ -241,8 +211,8 @@ INSERT INTO `operation_log` (
    'REQ-20260601-0004', '管理员拒绝预约 RES202606010003。', '2026-06-01 11:10:08'),
   (5005, 1, 'admin01', 'BORROW_EQUIPMENT', 'BORROW_RECORD', 3001, 'SUCCESS', '127.0.0.1',
    'REQ-20260601-0005', '管理员办理借出，生成借用记录 BOR202606010001。', '2026-06-01 13:30:10'),
-  (5006, 2, 'admin02', 'REGISTER_DAMAGE', 'DAMAGE_RECORD', 4001, 'SUCCESS', '127.0.0.1',
-   'REQ-20260531-0006', '管理员登记一条轻微损坏记录。', '2026-05-31 17:50:30')
+  (5006, 2, 'admin02', 'RETURN_EQUIPMENT', 'BORROW_RECORD', 3002, 'SUCCESS', '127.0.0.1',
+   'REQ-20260531-0006', '管理员办理归还，关闭借用记录 BOR202605310002。', '2026-05-31 17:50:30')
 ON DUPLICATE KEY UPDATE
   `operator_user_id` = VALUES(`operator_user_id`),
   `operator_username` = VALUES(`operator_username`),

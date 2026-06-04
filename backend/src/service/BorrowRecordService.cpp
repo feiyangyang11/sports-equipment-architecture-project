@@ -16,8 +16,8 @@
 namespace {
 
 bool isAllowedBorrowStatus(const std::string& status) {
-  static const std::array<std::string, 5> kAllowedStatuses = {
-      "BORROWING", "RETURNED", "OVERDUE", "DAMAGED_PENDING", "CLOSED"};
+  static const std::array<std::string, 4> kAllowedStatuses = {
+      "BORROWING", "RETURNED", "OVERDUE", "CLOSED"};
   return std::find(kAllowedStatuses.begin(), kAllowedStatuses.end(), status) !=
          kAllowedStatuses.end();
 }

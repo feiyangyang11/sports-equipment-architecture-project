@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `reservation` (
 -- Purpose:
 --   Store actual borrow/return records after reservation approval.
 -- Allowed values:
---   status : BORROWING | RETURNED | OVERDUE | DAMAGED_PENDING | CLOSED
+--   status : BORROWING | RETURNED | OVERDUE | CLOSED
 -- ------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `borrow_record` (
   `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary key',
@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `borrow_record` (
   `due_at` DATETIME NOT NULL COMMENT 'Expected return deadline',
   `received_by` BIGINT UNSIGNED NULL COMMENT 'FK to user.id, administrator who confirmed return',
   `returned_at` DATETIME NULL COMMENT 'Actual return time',
-  `status` VARCHAR(20) NOT NULL DEFAULT 'BORROWING' COMMENT 'BORROWING | RETURNED | OVERDUE | DAMAGED_PENDING | CLOSED',
+  `status` VARCHAR(20) NOT NULL DEFAULT 'BORROWING' COMMENT 'BORROWING | RETURNED | OVERDUE | CLOSED',
   `return_note` VARCHAR(255) NULL COMMENT 'Optional return note',
   `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
   `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last update time',
@@ -197,7 +197,7 @@ CREATE TABLE IF NOT EXISTS `borrow_record` (
     ON UPDATE RESTRICT
     ON DELETE SET NULL,
   CONSTRAINT `chk_borrow_record_status`
-    CHECK (`status` IN ('BORROWING', 'RETURNED', 'OVERDUE', 'DAMAGED_PENDING', 'CLOSED')),
+    CHECK (`status` IN ('BORROWING', 'RETURNED', 'OVERDUE', 'CLOSED')),
   CONSTRAINT `chk_borrow_record_quantity_positive`
     CHECK (`quantity` > 0),
   CONSTRAINT `chk_borrow_record_due_after_borrow`
@@ -205,64 +205,6 @@ CREATE TABLE IF NOT EXISTS `borrow_record` (
   CONSTRAINT `chk_borrow_record_return_after_borrow`
     CHECK (`returned_at` IS NULL OR `returned_at` >= `borrowed_at`)
 ) ENGINE=InnoDB COMMENT='Borrow and return record table';
-
--- ------------------------------------------------------------------
--- Table: damage_record
--- Purpose:
---   Store abnormal records such as damage, loss, overdue, or other issues.
--- Allowed values:
---   incident_type   : DAMAGE | LOSS | OVERDUE | OTHER
---   severity        : LOW | MEDIUM | HIGH
---   handling_status : OPEN | IN_PROGRESS | RESOLVED | CLOSED
--- ------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `damage_record` (
-  `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary key',
-  `borrow_record_id` BIGINT UNSIGNED NOT NULL COMMENT 'FK to borrow_record.id',
-  `equipment_id` BIGINT UNSIGNED NOT NULL COMMENT 'FK to equipment.id',
-  `responsible_user_id` BIGINT UNSIGNED NULL COMMENT 'FK to user.id, usually the borrowing student',
-  `reported_by` BIGINT UNSIGNED NOT NULL COMMENT 'FK to user.id, administrator reporter',
-  `incident_type` VARCHAR(20) NOT NULL COMMENT 'DAMAGE | LOSS | OVERDUE | OTHER',
-  `severity` VARCHAR(20) NOT NULL DEFAULT 'LOW' COMMENT 'LOW | MEDIUM | HIGH',
-  `description` TEXT NOT NULL COMMENT 'Issue description',
-  `estimated_cost` DECIMAL(10,2) NULL COMMENT 'Optional estimated loss or repair cost',
-  `handling_status` VARCHAR(20) NOT NULL DEFAULT 'OPEN' COMMENT 'OPEN | IN_PROGRESS | RESOLVED | CLOSED',
-  `resolution_note` VARCHAR(255) NULL COMMENT 'Resolution note',
-  `reported_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Issue report time',
-  `resolved_at` DATETIME NULL COMMENT 'Issue resolution time',
-  `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
-  `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last update time',
-  PRIMARY KEY (`id`),
-  KEY `idx_damage_record_borrow` (`borrow_record_id`),
-  KEY `idx_damage_record_equipment` (`equipment_id`),
-  KEY `idx_damage_record_type_status` (`incident_type`, `handling_status`, `reported_at`),
-  KEY `idx_damage_record_responsible_user` (`responsible_user_id`, `handling_status`),
-  CONSTRAINT `fk_damage_record_borrow`
-    FOREIGN KEY (`borrow_record_id`) REFERENCES `borrow_record` (`id`)
-    ON UPDATE RESTRICT
-    ON DELETE RESTRICT,
-  CONSTRAINT `fk_damage_record_equipment`
-    FOREIGN KEY (`equipment_id`) REFERENCES `equipment` (`id`)
-    ON UPDATE RESTRICT
-    ON DELETE RESTRICT,
-  CONSTRAINT `fk_damage_record_responsible_user`
-    FOREIGN KEY (`responsible_user_id`) REFERENCES `user` (`id`)
-    ON UPDATE RESTRICT
-    ON DELETE SET NULL,
-  CONSTRAINT `fk_damage_record_reported_by`
-    FOREIGN KEY (`reported_by`) REFERENCES `user` (`id`)
-    ON UPDATE RESTRICT
-    ON DELETE RESTRICT,
-  CONSTRAINT `chk_damage_record_incident_type`
-    CHECK (`incident_type` IN ('DAMAGE', 'LOSS', 'OVERDUE', 'OTHER')),
-  CONSTRAINT `chk_damage_record_severity`
-    CHECK (`severity` IN ('LOW', 'MEDIUM', 'HIGH')),
-  CONSTRAINT `chk_damage_record_handling_status`
-    CHECK (`handling_status` IN ('OPEN', 'IN_PROGRESS', 'RESOLVED', 'CLOSED')),
-  CONSTRAINT `chk_damage_record_estimated_cost`
-    CHECK (`estimated_cost` IS NULL OR `estimated_cost` >= 0),
-  CONSTRAINT `chk_damage_record_resolved_time`
-    CHECK (`resolved_at` IS NULL OR `resolved_at` >= `reported_at`)
-) ENGINE=InnoDB COMMENT='Damage and abnormal issue record table';
 
 -- ------------------------------------------------------------------
 -- Table: operation_log
