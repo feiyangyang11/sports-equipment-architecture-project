@@ -33,8 +33,16 @@ set(APP_SOURCES
 )
 
 set(BUSINESS_SOURCES
+  src/dao/BorrowRecordDAO.cpp
+  src/dao/EquipmentDAO.cpp
   src/dao/EquipmentCategoryDAO.cpp
+  src/dao/ReservationDAO.cpp
+  src/dao/UserDAO.cpp
+  src/service/BorrowRecordService.cpp
+  src/service/EquipmentService.cpp
   src/service/EquipmentCategoryService.cpp
+  src/service/ReservationService.cpp
+  src/service/UserService.cpp
 )
 
 add_executable(${PROJECT_NAME}

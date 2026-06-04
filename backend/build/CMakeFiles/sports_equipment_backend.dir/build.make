@@ -86,11 +86,41 @@ CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\app\main.cpp -o CMakeFiles\sports_equipment_backend.dir\src\app\main.cpp.s
 
+CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/dao/BorrowRecordDAO.cpp
+CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\dao\BorrowRecordDAO.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\dao\BorrowRecordDAO.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\dao\BorrowRecordDAO.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\dao\BorrowRecordDAO.cpp > CMakeFiles\sports_equipment_backend.dir\src\dao\BorrowRecordDAO.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\dao\BorrowRecordDAO.cpp -o CMakeFiles\sports_equipment_backend.dir\src\dao\BorrowRecordDAO.cpp.s
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/dao/EquipmentDAO.cpp
+CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\dao\EquipmentDAO.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\dao\EquipmentDAO.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\dao\EquipmentDAO.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\dao\EquipmentDAO.cpp > CMakeFiles\sports_equipment_backend.dir\src\dao\EquipmentDAO.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\dao\EquipmentDAO.cpp -o CMakeFiles\sports_equipment_backend.dir\src\dao\EquipmentDAO.cpp.s
+
 CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
 CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
 CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/dao/EquipmentCategoryDAO.cpp
 CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\dao\EquipmentCategoryDAO.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\dao\EquipmentCategoryDAO.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\dao\EquipmentCategoryDAO.cpp
 
 CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.i: cmake_force
@@ -101,11 +131,71 @@ CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\dao\EquipmentCategoryDAO.cpp -o CMakeFiles\sports_equipment_backend.dir\src\dao\EquipmentCategoryDAO.cpp.s
 
+CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/dao/ReservationDAO.cpp
+CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\dao\ReservationDAO.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\dao\ReservationDAO.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\dao\ReservationDAO.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\dao\ReservationDAO.cpp > CMakeFiles\sports_equipment_backend.dir\src\dao\ReservationDAO.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\dao\ReservationDAO.cpp -o CMakeFiles\sports_equipment_backend.dir\src\dao\ReservationDAO.cpp.s
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/dao/UserDAO.cpp
+CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\dao\UserDAO.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\dao\UserDAO.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\dao\UserDAO.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\dao\UserDAO.cpp > CMakeFiles\sports_equipment_backend.dir\src\dao\UserDAO.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\dao\UserDAO.cpp -o CMakeFiles\sports_equipment_backend.dir\src\dao\UserDAO.cpp.s
+
+CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/service/BorrowRecordService.cpp
+CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\service\BorrowRecordService.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\service\BorrowRecordService.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\service\BorrowRecordService.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\service\BorrowRecordService.cpp > CMakeFiles\sports_equipment_backend.dir\src\service\BorrowRecordService.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\service\BorrowRecordService.cpp -o CMakeFiles\sports_equipment_backend.dir\src\service\BorrowRecordService.cpp.s
+
+CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/service/EquipmentService.cpp
+CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\service\EquipmentService.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\service\EquipmentService.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\service\EquipmentService.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\service\EquipmentService.cpp > CMakeFiles\sports_equipment_backend.dir\src\service\EquipmentService.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\service\EquipmentService.cpp -o CMakeFiles\sports_equipment_backend.dir\src\service\EquipmentService.cpp.s
+
 CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
 CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
 CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/service/EquipmentCategoryService.cpp
 CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\service\EquipmentCategoryService.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\service\EquipmentCategoryService.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\service\EquipmentCategoryService.cpp
 
 CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.i: cmake_force
@@ -116,25 +206,71 @@ CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\service\EquipmentCategoryService.cpp -o CMakeFiles\sports_equipment_backend.dir\src\service\EquipmentCategoryService.cpp.s
 
+CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/service/ReservationService.cpp
+CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\service\ReservationService.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\service\ReservationService.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\service\ReservationService.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\service\ReservationService.cpp > CMakeFiles\sports_equipment_backend.dir\src\service\ReservationService.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\service\ReservationService.cpp -o CMakeFiles\sports_equipment_backend.dir\src\service\ReservationService.cpp.s
+
+CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/flags.make
+CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/includes_CXX.rsp
+CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj: D:/newdir/sports-equipment-architecture-project/backend/src/service/UserService.cpp
+CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj: CMakeFiles/sports_equipment_backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj -MF CMakeFiles\sports_equipment_backend.dir\src\service\UserService.cpp.obj.d -o CMakeFiles\sports_equipment_backend.dir\src\service\UserService.cpp.obj -c D:\newdir\sports-equipment-architecture-project\backend\src\service\UserService.cpp
+
+CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\newdir\sports-equipment-architecture-project\backend\src\service\UserService.cpp > CMakeFiles\sports_equipment_backend.dir\src\service\UserService.cpp.i
+
+CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\newdir\sports-equipment-architecture-project\backend\src\service\UserService.cpp -o CMakeFiles\sports_equipment_backend.dir\src\service\UserService.cpp.s
+
 # Object files for target sports_equipment_backend
 sports_equipment_backend_OBJECTS = \
 "CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj" \
 "CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj" \
-"CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj"
+"CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj" \
+"CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj"
 
 # External object files for target sports_equipment_backend
 sports_equipment_backend_EXTERNAL_OBJECTS =
 
 sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj
 sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj
 sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj
+sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj
 sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/build.make
 sports_equipment_backend.exe: C:/msys64/ucrt64/lib/oatpp-1.3.0/liboatpp.a
 sports_equipment_backend.exe: C:/msys64/ucrt64/lib/libmariadb.dll.a
 sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/linkLibs.rsp
 sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/objects1.rsp
 sports_equipment_backend.exe: CMakeFiles/sports_equipment_backend.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable sports_equipment_backend.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\newdir\sports-equipment-architecture-project\backend\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable sports_equipment_backend.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sports_equipment_backend.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

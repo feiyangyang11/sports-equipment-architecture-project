@@ -301,8 +301,8 @@ CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_set.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multiset.h \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/HttpRouter.hpp \
- D:/newdir/sports-equipment-architecture-project/backend/src/controller/EquipmentCategoryController.hpp \
- D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/EquipmentCategoryDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/controller/AuthController.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/request/LoginRequestDto.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/DTO_define.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/core/macro/basic.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/dto/base_define.hpp \
@@ -310,8 +310,9 @@ CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj: \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/DTO_undef.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/dto/base_undef.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/dto/enum_undef.hpp \
- D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/EquipmentCategoryListDto.hpp \
- D:/newdir/sports-equipment-architecture-project/backend/src/service/EquipmentCategoryService.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/LoginResponseDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/UserProfileDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/service/UserService.hpp \
  D:/newdir/sports-equipment-architecture-project/backend/src/dao/DatabaseConfig.hpp \
  C:/msys64/ucrt64/include/c++/15.2.0/fstream \
  C:/msys64/ucrt64/include/c++/15.2.0/istream \
@@ -332,7 +333,8 @@ CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/fstream.tcc \
- D:/newdir/sports-equipment-architecture-project/backend/src/model/EquipmentCategory.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/User.hpp \
+ C:/msys64/ucrt64/include/c++/15.2.0/optional \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/ApiController_define.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/base_define.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/auth_define.hpp \
@@ -343,6 +345,34 @@ CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj: \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/auth_undef.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/bundle_undef.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/api_controller/cors_undef.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/controller/BorrowRecordController.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/request/CreateBorrowRequestDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/request/ReturnBorrowRequestDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/BorrowRecordDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/BorrowRecordPageDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/service/BorrowRecordService.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/BorrowRecordPageResult.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/BorrowRecordView.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/controller/EquipmentController.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/EquipmentDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/EquipmentPageDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/service/EquipmentService.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/Equipment.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/EquipmentPageResult.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/controller/EquipmentCategoryController.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/EquipmentCategoryDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/EquipmentCategoryListDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/service/EquipmentCategoryService.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/EquipmentCategory.hpp \
  D:/newdir/sports-equipment-architecture-project/backend/src/controller/HealthController.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/controller/ReservationController.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/request/CancelReservationRequestDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/request/CreateReservationRequestDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/request/ReviewReservationRequestDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/ReservationDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/dto/response/ReservationPageDto.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/service/ReservationService.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/ReservationPageResult.hpp \
+ D:/newdir/sports-equipment-architecture-project/backend/src/model/ReservationView.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/network/Server.hpp \
  C:/msys64/ucrt64/include/c++/15.2.0/iostream

@@ -152,6 +152,30 @@ src/app/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.s
 .PHONY : src/app/main.cpp.s
 
+src/dao/BorrowRecordDAO.obj: src/dao/BorrowRecordDAO.cpp.obj
+.PHONY : src/dao/BorrowRecordDAO.obj
+
+# target to build an object file
+src/dao/BorrowRecordDAO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.obj
+.PHONY : src/dao/BorrowRecordDAO.cpp.obj
+
+src/dao/BorrowRecordDAO.i: src/dao/BorrowRecordDAO.cpp.i
+.PHONY : src/dao/BorrowRecordDAO.i
+
+# target to preprocess a source file
+src/dao/BorrowRecordDAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.i
+.PHONY : src/dao/BorrowRecordDAO.cpp.i
+
+src/dao/BorrowRecordDAO.s: src/dao/BorrowRecordDAO.cpp.s
+.PHONY : src/dao/BorrowRecordDAO.s
+
+# target to generate assembly for a file
+src/dao/BorrowRecordDAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/BorrowRecordDAO.cpp.s
+.PHONY : src/dao/BorrowRecordDAO.cpp.s
+
 src/dao/EquipmentCategoryDAO.obj: src/dao/EquipmentCategoryDAO.cpp.obj
 .PHONY : src/dao/EquipmentCategoryDAO.obj
 
@@ -175,6 +199,102 @@ src/dao/EquipmentCategoryDAO.s: src/dao/EquipmentCategoryDAO.cpp.s
 src/dao/EquipmentCategoryDAO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentCategoryDAO.cpp.s
 .PHONY : src/dao/EquipmentCategoryDAO.cpp.s
+
+src/dao/EquipmentDAO.obj: src/dao/EquipmentDAO.cpp.obj
+.PHONY : src/dao/EquipmentDAO.obj
+
+# target to build an object file
+src/dao/EquipmentDAO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.obj
+.PHONY : src/dao/EquipmentDAO.cpp.obj
+
+src/dao/EquipmentDAO.i: src/dao/EquipmentDAO.cpp.i
+.PHONY : src/dao/EquipmentDAO.i
+
+# target to preprocess a source file
+src/dao/EquipmentDAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.i
+.PHONY : src/dao/EquipmentDAO.cpp.i
+
+src/dao/EquipmentDAO.s: src/dao/EquipmentDAO.cpp.s
+.PHONY : src/dao/EquipmentDAO.s
+
+# target to generate assembly for a file
+src/dao/EquipmentDAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/EquipmentDAO.cpp.s
+.PHONY : src/dao/EquipmentDAO.cpp.s
+
+src/dao/ReservationDAO.obj: src/dao/ReservationDAO.cpp.obj
+.PHONY : src/dao/ReservationDAO.obj
+
+# target to build an object file
+src/dao/ReservationDAO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.obj
+.PHONY : src/dao/ReservationDAO.cpp.obj
+
+src/dao/ReservationDAO.i: src/dao/ReservationDAO.cpp.i
+.PHONY : src/dao/ReservationDAO.i
+
+# target to preprocess a source file
+src/dao/ReservationDAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.i
+.PHONY : src/dao/ReservationDAO.cpp.i
+
+src/dao/ReservationDAO.s: src/dao/ReservationDAO.cpp.s
+.PHONY : src/dao/ReservationDAO.s
+
+# target to generate assembly for a file
+src/dao/ReservationDAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/ReservationDAO.cpp.s
+.PHONY : src/dao/ReservationDAO.cpp.s
+
+src/dao/UserDAO.obj: src/dao/UserDAO.cpp.obj
+.PHONY : src/dao/UserDAO.obj
+
+# target to build an object file
+src/dao/UserDAO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.obj
+.PHONY : src/dao/UserDAO.cpp.obj
+
+src/dao/UserDAO.i: src/dao/UserDAO.cpp.i
+.PHONY : src/dao/UserDAO.i
+
+# target to preprocess a source file
+src/dao/UserDAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.i
+.PHONY : src/dao/UserDAO.cpp.i
+
+src/dao/UserDAO.s: src/dao/UserDAO.cpp.s
+.PHONY : src/dao/UserDAO.s
+
+# target to generate assembly for a file
+src/dao/UserDAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/dao/UserDAO.cpp.s
+.PHONY : src/dao/UserDAO.cpp.s
+
+src/service/BorrowRecordService.obj: src/service/BorrowRecordService.cpp.obj
+.PHONY : src/service/BorrowRecordService.obj
+
+# target to build an object file
+src/service/BorrowRecordService.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.obj
+.PHONY : src/service/BorrowRecordService.cpp.obj
+
+src/service/BorrowRecordService.i: src/service/BorrowRecordService.cpp.i
+.PHONY : src/service/BorrowRecordService.i
+
+# target to preprocess a source file
+src/service/BorrowRecordService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.i
+.PHONY : src/service/BorrowRecordService.cpp.i
+
+src/service/BorrowRecordService.s: src/service/BorrowRecordService.cpp.s
+.PHONY : src/service/BorrowRecordService.s
+
+# target to generate assembly for a file
+src/service/BorrowRecordService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/BorrowRecordService.cpp.s
+.PHONY : src/service/BorrowRecordService.cpp.s
 
 src/service/EquipmentCategoryService.obj: src/service/EquipmentCategoryService.cpp.obj
 .PHONY : src/service/EquipmentCategoryService.obj
@@ -200,6 +320,78 @@ src/service/EquipmentCategoryService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentCategoryService.cpp.s
 .PHONY : src/service/EquipmentCategoryService.cpp.s
 
+src/service/EquipmentService.obj: src/service/EquipmentService.cpp.obj
+.PHONY : src/service/EquipmentService.obj
+
+# target to build an object file
+src/service/EquipmentService.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.obj
+.PHONY : src/service/EquipmentService.cpp.obj
+
+src/service/EquipmentService.i: src/service/EquipmentService.cpp.i
+.PHONY : src/service/EquipmentService.i
+
+# target to preprocess a source file
+src/service/EquipmentService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.i
+.PHONY : src/service/EquipmentService.cpp.i
+
+src/service/EquipmentService.s: src/service/EquipmentService.cpp.s
+.PHONY : src/service/EquipmentService.s
+
+# target to generate assembly for a file
+src/service/EquipmentService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/EquipmentService.cpp.s
+.PHONY : src/service/EquipmentService.cpp.s
+
+src/service/ReservationService.obj: src/service/ReservationService.cpp.obj
+.PHONY : src/service/ReservationService.obj
+
+# target to build an object file
+src/service/ReservationService.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.obj
+.PHONY : src/service/ReservationService.cpp.obj
+
+src/service/ReservationService.i: src/service/ReservationService.cpp.i
+.PHONY : src/service/ReservationService.i
+
+# target to preprocess a source file
+src/service/ReservationService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.i
+.PHONY : src/service/ReservationService.cpp.i
+
+src/service/ReservationService.s: src/service/ReservationService.cpp.s
+.PHONY : src/service/ReservationService.s
+
+# target to generate assembly for a file
+src/service/ReservationService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/ReservationService.cpp.s
+.PHONY : src/service/ReservationService.cpp.s
+
+src/service/UserService.obj: src/service/UserService.cpp.obj
+.PHONY : src/service/UserService.obj
+
+# target to build an object file
+src/service/UserService.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.obj
+.PHONY : src/service/UserService.cpp.obj
+
+src/service/UserService.i: src/service/UserService.cpp.i
+.PHONY : src/service/UserService.i
+
+# target to preprocess a source file
+src/service/UserService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.i
+.PHONY : src/service/UserService.cpp.i
+
+src/service/UserService.s: src/service/UserService.cpp.s
+.PHONY : src/service/UserService.s
+
+# target to generate assembly for a file
+src/service/UserService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sports_equipment_backend.dir\build.make CMakeFiles/sports_equipment_backend.dir/src/service/UserService.cpp.s
+.PHONY : src/service/UserService.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,12 +404,36 @@ help:
 	@echo ... src/app/main.obj
 	@echo ... src/app/main.i
 	@echo ... src/app/main.s
+	@echo ... src/dao/BorrowRecordDAO.obj
+	@echo ... src/dao/BorrowRecordDAO.i
+	@echo ... src/dao/BorrowRecordDAO.s
 	@echo ... src/dao/EquipmentCategoryDAO.obj
 	@echo ... src/dao/EquipmentCategoryDAO.i
 	@echo ... src/dao/EquipmentCategoryDAO.s
+	@echo ... src/dao/EquipmentDAO.obj
+	@echo ... src/dao/EquipmentDAO.i
+	@echo ... src/dao/EquipmentDAO.s
+	@echo ... src/dao/ReservationDAO.obj
+	@echo ... src/dao/ReservationDAO.i
+	@echo ... src/dao/ReservationDAO.s
+	@echo ... src/dao/UserDAO.obj
+	@echo ... src/dao/UserDAO.i
+	@echo ... src/dao/UserDAO.s
+	@echo ... src/service/BorrowRecordService.obj
+	@echo ... src/service/BorrowRecordService.i
+	@echo ... src/service/BorrowRecordService.s
 	@echo ... src/service/EquipmentCategoryService.obj
 	@echo ... src/service/EquipmentCategoryService.i
 	@echo ... src/service/EquipmentCategoryService.s
+	@echo ... src/service/EquipmentService.obj
+	@echo ... src/service/EquipmentService.i
+	@echo ... src/service/EquipmentService.s
+	@echo ... src/service/ReservationService.obj
+	@echo ... src/service/ReservationService.i
+	@echo ... src/service/ReservationService.s
+	@echo ... src/service/UserService.obj
+	@echo ... src/service/UserService.i
+	@echo ... src/service/UserService.s
 .PHONY : help
 
 
