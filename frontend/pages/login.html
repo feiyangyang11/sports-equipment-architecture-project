@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录 - 体育器材管理系统</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/app.css" />
+  </head>
+  <body>
+    <div class="login-screen">
+      <section class="login-story">
+        <span class="login-story__badge">Frontend Blueprint</span>
+        <h1>先把页面跑顺，再把接口接稳。</h1>
+        <p>
+          这套前端先以静态多页面和默认 mock 数据模式开发，目的是把信息架构、交互路径、状态流转和角色分区先讲清楚。等页面和脚本边界稳定后，再切换到真实接口联调，风险会小很多。
+        </p>
+        <div class="login-highlight-grid">
+          <article class="login-highlight">
+            <strong>学生端路径</strong>
+            <span>器材查询 → 提交预约 → 查看预约 → 查看借用</span>
+          </article>
+          <article class="login-highlight">
+            <strong>管理员端路径</strong>
+            <span>审核预约 → 办理借出 → 借还管理 → 归还闭环</span>
+          </article>
+          <article class="login-highlight">
+            <strong>当前开发重点</strong>
+            <span>先抽公共壳层、认证层、API 层，再落每个页面脚本。</span>
+          </article>
+          <article class="login-highlight">
+            <strong>联调策略</strong>
+            <span>默认 mock，可随时切换到真实 API，不阻塞前端建设。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="login-card">
+        <h2 class="login-card__title">登录系统</h2>
+        <p class="login-card__subtitle">
+          先从登录入口进入。当前页面支持学生和管理员两类账号，登录后会根据角色自动跳转到对应工作台。
+        </p>
+        <div class="feedback" id="loginFeedback"></div>
+        <form id="loginForm" class="stack">
+          <div class="field">
+            <label for="username">用户名</label>
+            <input id="username" name="username" type="text" placeholder="例如：admin01 或 stu2026001" />
+          </div>
+          <div class="field">
+            <label for="password">密码</label>
+            <input id="password" name="password" type="password" placeholder="请输入密码" />
+          </div>
+          <div class="button-row">
+            <button class="btn btn--primary btn--wide" type="submit">进入系统</button>
+          </div>
+        </form>
+        <div class="page-note">
+          <strong>快捷体验账号：</strong><br />
+          管理员：`admin01 / Admin@123`<br />
+          学生：`stu2026001 / Student@123`
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="../assets/js/login.js"></script>
+  </body>
+  </html>
