@@ -1,4 +1,4 @@
-import { DEFAULT_PAGE_SIZE, USE_MOCK } from "./config.js";
+import { DEFAULT_PAGE_SIZE } from "./config.js";
 import { borrowApi } from "./api.js";
 import { requireRole } from "./guard.js";
 import { mountShell } from "./shell.js";
@@ -26,7 +26,7 @@ function getSelectedBorrow() {
 
 function renderBorrowTable(items) {
   if (!items.length) {
-    return `<div class="empty-state">当前筛选条件下没有借用记录。借出办理完成后，这里会成为学生最常查看的页面之一。</div>`;
+    return `<div class="empty-state">当前筛选条件下没有借用记录，请切换筛选条件或稍后再查看。</div>`;
   }
 
   return `
@@ -136,7 +136,7 @@ function render() {
       <div class="panel__header">
         <div>
           <h3 class="panel__title">我的借用记录</h3>
-          <p class="panel__subtitle">借用页的重点是让学生快速知道：哪些器材还在手里，哪些已经归还，什么时候到期。</p>
+          <p class="panel__subtitle">查看借用状态、归还情况和应还时间，便于及时安排归还。</p>
         </div>
       </div>
       <div class="feedback ${state.pageFeedback.message ? `feedback--${state.pageFeedback.type} is-visible` : ""}">${escapeHtml(state.pageFeedback.message)}</div>
@@ -161,12 +161,12 @@ function render() {
     role: "STUDENT",
     navKey: "student-borrows",
     eyebrow: "Student Borrow Tracker",
-    title: "借用记录页的职责，是把“当前是否还持有器材”讲清楚。",
-    lead: "这类页面和预约页的差异在于：它面对的是已经发生的借出行为，所以更强调状态、期限和归还结果。",
+    title: "我的借用",
+    lead: "查看个人借用记录、借出期限和归还状态。",
     stats,
     main,
     aside: renderBorrowDetail(selected),
-    topBadge: USE_MOCK ? "Mock Data Mode" : "Live API Mode",
+    topBadge: "学生端",
   });
 
   bindEvents();

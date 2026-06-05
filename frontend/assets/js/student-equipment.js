@@ -1,4 +1,4 @@
-import { DEFAULT_PAGE_SIZE, USE_MOCK } from "./config.js";
+import { DEFAULT_PAGE_SIZE } from "./config.js";
 import { equipmentApi, reservationApi } from "./api.js";
 import { requireRole } from "./guard.js";
 import { mountShell } from "./shell.js";
@@ -82,8 +82,8 @@ function renderDetailCard(equipment) {
           <p class="detail-item__value">可用 ${equipment.availableStock} / 总量 ${equipment.totalStock}</p>
         </div>
         <div class="detail-item">
-          <p class="detail-item__label">本页中的作用</p>
-          <p class="detail-item__value">这类详情面板适合承接“列表选中项”的更多信息，不必额外跳出新页面。</p>
+          <p class="detail-item__label">使用提示</p>
+          <p class="detail-item__value">请结合库存、状态和存放位置选择合适的器材后再提交预约。</p>
         </div>
       </div>
       <div class="button-row" style="margin-top: 18px;">
@@ -169,7 +169,7 @@ function render() {
       <div class="panel__header">
         <div>
           <h3 class="panel__title">器材列表</h3>
-          <p class="panel__subtitle">先把“分类筛选 + 分页 + 详情 + 发起预约”这条学生主路径做顺，再继续扩展搜索和更细的筛选条件。</p>
+          <p class="panel__subtitle">可按分类筛选器材，查看库存与详情，并直接发起预约申请。</p>
         </div>
       </div>
       <div class="feedback ${state.pageFeedback.message ? `feedback--${state.pageFeedback.type} is-visible` : ""}" id="equipmentPageFeedback">${escapeHtml(state.pageFeedback.message)}</div>
@@ -195,12 +195,12 @@ function render() {
     role: "STUDENT",
     navKey: "student-equipment",
     eyebrow: "Student Equipment Hub",
-    title: "先浏览器材，再从列表里顺势发起预约。",
-    lead: "这一页的目标不是炫技，而是把学生最常走的主链路设计清楚：看清库存、理解器材状态、点开详情、直接预约。",
+    title: "器材总览",
+    lead: "在这里浏览可用器材、了解库存情况，并提交预约申请。",
     stats,
     main,
     aside: renderDetailCard(equipment),
-    topBadge: USE_MOCK ? "Mock Data Mode" : "Live API Mode",
+    topBadge: "学生端",
   });
 
   bindEvents();
@@ -258,7 +258,7 @@ function bindEvents() {
       await reservationApi.create(payload);
       bootstrapModal("reservationModal")?.hide();
       state.pageFeedback = {
-        message: "预约申请已提交。下一步建议去“我的预约”页面查看状态变化。",
+        message: "预约申请已提交，请在“我的预约”中查看审核进度。",
         type: "success",
       };
       form.reset();

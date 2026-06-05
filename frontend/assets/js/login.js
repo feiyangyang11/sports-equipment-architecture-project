@@ -26,7 +26,7 @@ loginForm?.addEventListener("submit", async (event) => {
   try {
     const response = await authApi.login(username, password);
     saveAuthSession(response);
-    setFeedback(feedback, "登录成功，正在跳转到对应工作台...", "success");
+    setFeedback(feedback, "登录成功，正在进入系统...", "success");
     window.setTimeout(() => redirectByRole(response.user), 420);
   } catch (error) {
     setFeedback(feedback, safeErrorMessage(error, "登录失败，请检查账号或密码。"));

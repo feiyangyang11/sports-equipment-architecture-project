@@ -19,27 +19,27 @@
   <body>
     <div class="login-screen">
       <section class="login-story">
-        <span class="login-story__badge">Frontend Blueprint</span>
-        <h1>先把页面跑顺，再把接口接稳。</h1>
+        <span class="login-story__badge">Campus Sports System</span>
+        <h1>统一管理器材预约、借出与归还流程。</h1>
         <p>
-          这套前端先以静态多页面和默认 mock 数据模式开发，目的是把信息架构、交互路径、状态流转和角色分区先讲清楚。等页面和脚本边界稳定后，再切换到真实接口联调，风险会小很多。
+          系统面向学生和管理员两类用户，支持器材查询、预约申请、预约审核、借出办理与归还登记，帮助校园器材管理流程更加清晰高效。
         </p>
         <div class="login-highlight-grid">
           <article class="login-highlight">
-            <strong>学生端路径</strong>
-            <span>器材查询 → 提交预约 → 查看预约 → 查看借用</span>
+            <strong>学生服务</strong>
+            <span>查询器材、提交预约、查看预约进度与个人借用记录。</span>
           </article>
           <article class="login-highlight">
-            <strong>管理员端路径</strong>
-            <span>审核预约 → 办理借出 → 借还管理 → 归还闭环</span>
+            <strong>管理服务</strong>
+            <span>审核预约申请，办理借出与归还，掌握器材使用状态。</span>
           </article>
           <article class="login-highlight">
-            <strong>当前开发重点</strong>
-            <span>先抽公共壳层、认证层、API 层，再落每个页面脚本。</span>
+            <strong>流程清晰</strong>
+            <span>从预约到借还的关键节点均有明确状态，便于跟踪处理。</span>
           </article>
           <article class="login-highlight">
-            <strong>联调策略</strong>
-            <span>默认 mock，可随时切换到真实 API，不阻塞前端建设。</span>
+            <strong>角色分工</strong>
+            <span>学生专注申请与查询，管理员负责审核与借还管理。</span>
           </article>
         </div>
       </section>
@@ -47,7 +47,7 @@
       <section class="login-card">
         <h2 class="login-card__title">登录系统</h2>
         <p class="login-card__subtitle">
-          先从登录入口进入。当前页面支持学生和管理员两类账号，登录后会根据角色自动跳转到对应工作台。
+          请输入账号和密码。登录成功后，系统会根据角色自动进入对应页面。
         </p>
         <div class="feedback" id="loginFeedback"></div>
         <form id="loginForm" class="stack">
@@ -64,9 +64,9 @@
           </div>
         </form>
         <div class="page-note">
-          <strong>快捷体验账号：</strong><br />
-          管理员：`admin01 / Admin@123`<br />
-          学生：`stu2026001 / Student@123`
+          <strong>体验账号：</strong><br />
+          管理员：admin01 / Admin@123<br />
+          学生：stu2026001 / Student@123
         </div>
       </section>
     </div>

@@ -38,7 +38,7 @@ export function mountShell({
   stats = "",
   main,
   aside = "",
-  topBadge = "Mock Frontend Workspace",
+  topBadge = "校园体育器材管理",
 }) {
   document.body.innerHTML = `
     <div class="app-shell">
@@ -46,7 +46,7 @@ export function mountShell({
         <section class="app-shell__brand">
           <p class="brand-eyebrow">${role === "ADMIN" ? "Admin Console" : "Student Space"}</p>
           <h1 class="brand-title">${APP_NAME}</h1>
-          <p class="brand-subtitle">先把页面、状态流和交互骨架搭稳，再切换到真实接口联调。</p>
+          <p class="brand-subtitle">围绕器材预约、审核、借出与归还提供统一的业务入口。</p>
         </section>
         <nav class="app-shell__nav">
           ${renderNav(role, navKey)}
@@ -82,7 +82,7 @@ export function mountShell({
     try {
       await authApi.logout();
     } catch (_error) {
-      // Ignore logout failures on the mock/static frontend.
+      // Still clear the local session even if the logout request fails.
     } finally {
       clearAuthSession();
       window.location.href = "./login.html";

@@ -1,4 +1,4 @@
-import { DEFAULT_PAGE_SIZE, USE_MOCK } from "./config.js";
+import { DEFAULT_PAGE_SIZE } from "./config.js";
 import { reservationApi } from "./api.js";
 import { requireRole } from "./guard.js";
 import { mountShell } from "./shell.js";
@@ -31,7 +31,7 @@ function isReviewable(item) {
 
 function renderReservationTable(items) {
   if (!items.length) {
-    return `<div class="empty-state">当前筛选条件下没有预约记录。管理员页的关键是把待处理项和已处理项清晰分区。</div>`;
+    return `<div class="empty-state">当前筛选条件下没有预约记录，请切换筛选条件后重试。</div>`;
   }
 
   return `
@@ -191,7 +191,7 @@ function render() {
       <div class="panel__header">
         <div>
           <h3 class="panel__title">预约审核队列</h3>
-          <p class="panel__subtitle">管理员页要强调“谁在申请、申请什么、下一步要不要处理”。所以列表更偏操作台，而不是纯展示。</p>
+          <p class="panel__subtitle">查看预约申请人、器材信息和预约时间，并完成审核处理。</p>
         </div>
       </div>
       <div class="feedback ${state.pageFeedback.message ? `feedback--${state.pageFeedback.type} is-visible` : ""}">${escapeHtml(state.pageFeedback.message)}</div>
@@ -217,12 +217,12 @@ function render() {
     role: "ADMIN",
     navKey: "admin-reservations",
     eyebrow: "Admin Reservation Review",
-    title: "管理员前台要更像工作台，而不是阅读页面。",
-    lead: "这页把核心动作直接放在列表行内，让审核成为自然的下一步；同时保留详情侧栏承接完整上下文，避免误判。",
+    title: "预约审核",
+    lead: "查看预约申请详情，并完成通过或拒绝操作。",
     stats,
     main,
     aside: renderReservationDetail(selected),
-    topBadge: USE_MOCK ? "Mock Data Mode" : "Live API Mode",
+    topBadge: "管理员端",
   });
 
   bindEvents();

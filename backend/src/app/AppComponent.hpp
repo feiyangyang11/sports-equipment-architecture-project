@@ -7,6 +7,7 @@
 #include "oatpp/parser/json/mapping/ObjectMapper.hpp"
 #include "oatpp/web/server/HttpConnectionHandler.hpp"
 #include "oatpp/web/server/HttpRouter.hpp"
+#include "oatpp/web/server/interceptor/AllowCorsGlobal.hpp"
 
 class AppComponent {
 public:
@@ -30,7 +31,19 @@ public:
                          serverConnectionHandler)
   ([] {
     OATPP_COMPONENT(std::shared_ptr<oatpp::web::server::HttpRouter>, router);
-    return oatpp::web::server::HttpConnectionHandler::createShared(router);
+    auto connectionHandler =
+        oatpp::web::server::HttpConnectionHandler::createShared(router);
+
+    connectionHandler->addRequestInterceptor(
+        std::make_shared<oatpp::web::server::interceptor::AllowOptionsGlobal>());
+    connectionHandler->addResponseInterceptor(
+        std::make_shared<oatpp::web::server::interceptor::AllowCorsGlobal>(
+            "*",
+            "GET, POST, OPTIONS",
+            "Content-Type, Authorization",
+            "86400"));
+
+    return connectionHandler;
   }());
 
   // Serialize controller responses to JSON.

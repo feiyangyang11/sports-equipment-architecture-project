@@ -1,5 +1,5 @@
 import { API_BASE_URL, USE_MOCK } from "./config.js";
-import { getToken } from "./auth.js";
+import { clearAuthSession, getToken } from "./auth.js";
 import * as mockApi from "./mock-api.js";
 
 async function parseResponse(response) {
@@ -22,14 +22,31 @@ async function request(path, { method = "GET", body, auth = true } = {}) {
     }
   }
 
-  const response = await fetch(`${API_BASE_URL}${path}`, {
-    method,
-    headers,
-    body: body !== undefined ? JSON.stringify(body) : undefined,
-  });
+  let response;
+  try {
+    response = await fetch(`${API_BASE_URL}${path}`, {
+      method,
+      headers,
+      body: body !== undefined ? JSON.stringify(body) : undefined,
+    });
+  } catch (_error) {
+    throw {
+      status: 0,
+      message: `无法连接后端服务，请确认后端已启动，并监听在 ${API_BASE_URL}`,
+    };
+  }
 
   const payload = await parseResponse(response);
   if (!response.ok) {
+    if (auth && response.status === 401) {
+      clearAuthSession();
+      if (!window.location.pathname.endsWith("/login.html")) {
+        window.setTimeout(() => {
+          window.location.href = "./login.html";
+        }, 0);
+      }
+    }
+
     throw {
       status: response.status,
       message: typeof payload === "string" ? payload : payload?.message || "request failed",

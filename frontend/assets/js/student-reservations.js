@@ -1,4 +1,4 @@
-import { DEFAULT_PAGE_SIZE, USE_MOCK } from "./config.js";
+import { DEFAULT_PAGE_SIZE } from "./config.js";
 import { reservationApi } from "./api.js";
 import { requireRole } from "./guard.js";
 import { mountShell } from "./shell.js";
@@ -194,7 +194,7 @@ function render() {
       <div class="panel__header">
         <div>
           <h3 class="panel__title">我的预约记录</h3>
-          <p class="panel__subtitle">这页重点承接“我提交过什么、现在处在哪个状态、还能不能取消”三个问题。</p>
+          <p class="panel__subtitle">查看个人预约记录、当前状态，以及可取消的预约申请。</p>
         </div>
       </div>
       <div class="feedback ${state.pageFeedback.message ? `feedback--${state.pageFeedback.type} is-visible` : ""}" id="reservationPageFeedback">${escapeHtml(state.pageFeedback.message)}</div>
@@ -220,12 +220,12 @@ function render() {
     role: "STUDENT",
     navKey: "student-reservations",
     eyebrow: "Student Reservation Board",
-    title: "把预约的状态变化讲清楚，比堆更多按钮更重要。",
-    lead: "这页用列表 + 详情双栏来帮助理解预约状态机：待审核、已通过、已拒绝、已取消、已借出、已完成。",
+    title: "我的预约",
+    lead: "查看预约申请的审核进度、预约时间和器材信息。",
     stats,
     main,
     aside: renderReservationDetail(selected),
-    topBadge: USE_MOCK ? "Mock Data Mode" : "Live API Mode",
+    topBadge: "学生端",
   });
 
   bindEvents();

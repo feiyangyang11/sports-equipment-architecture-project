@@ -1,4 +1,4 @@
-import { DEFAULT_PAGE_SIZE, USE_MOCK } from "./config.js";
+import { DEFAULT_PAGE_SIZE } from "./config.js";
 import { borrowApi, reservationApi } from "./api.js";
 import { requireRole } from "./guard.js";
 import { mountShell } from "./shell.js";
@@ -28,7 +28,7 @@ function getSelectedBorrow() {
 
 function renderApprovedReservations() {
   if (!state.approvedReservations.length) {
-    return `<div class="empty-state">当前没有待办理借出的已通过预约。借出页会直接衔接预约审核后的下一步动作。</div>`;
+    return `<div class="empty-state">当前没有待办理借出的预约记录，请稍后再查看。</div>`;
   }
 
   return `
@@ -54,7 +54,7 @@ function renderApprovedReservations() {
 
 function renderBorrowTable(items) {
   if (!items.length) {
-    return `<div class="empty-state">当前筛选条件下没有借用记录。借出办理完成后，这里会成为管理员持续维护的主工作台。</div>`;
+    return `<div class="empty-state">当前筛选条件下没有借用记录，请切换筛选条件后重试。</div>`;
   }
 
   return `
@@ -252,7 +252,7 @@ function render() {
       <div class="panel__header">
         <div>
           <h3 class="panel__title">待办理借出</h3>
-          <p class="panel__subtitle">这里承接“预约审核通过”之后的下一跳，所以我把已通过预约单独放成一个操作面板，而不是和借用记录混在一起。</p>
+          <p class="panel__subtitle">这里展示已审核通过、待办理借出的预约记录，可直接完成借出登记。</p>
         </div>
       </div>
       ${renderApprovedReservations()}
@@ -261,7 +261,7 @@ function render() {
       <div class="panel__header">
         <div>
           <h3 class="panel__title">借还记录</h3>
-          <p class="panel__subtitle">借用记录页是管理员最核心的业务台之一：既要能看清当前借出，也要能顺手办理归还。</p>
+          <p class="panel__subtitle">查看借用记录、跟踪借出状态，并及时办理归还。</p>
         </div>
       </div>
       <div class="feedback ${state.pageFeedback.message ? `feedback--${state.pageFeedback.type} is-visible` : ""}">${escapeHtml(state.pageFeedback.message)}</div>
@@ -288,12 +288,12 @@ function render() {
     role: "ADMIN",
     navKey: "admin-borrows",
     eyebrow: "Admin Borrow Console",
-    title: "借出和归还最好放进同一工作台里看。",
-    lead: "这样管理员在同一页就能看到：哪些预约已经可以借出、哪些器材仍在外借、哪些记录刚刚归还闭环，整个业务节奏会更连贯。",
+    title: "借还管理",
+    lead: "处理已审核预约的借出登记，并维护器材归还记录。",
     stats,
     main,
     aside: renderBorrowDetail(selected),
-    topBadge: USE_MOCK ? "Mock Data Mode" : "Live API Mode",
+    topBadge: "管理员端",
   });
 
   bindEvents();

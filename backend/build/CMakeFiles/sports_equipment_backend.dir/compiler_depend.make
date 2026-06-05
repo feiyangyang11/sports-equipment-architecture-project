@@ -292,6 +292,7 @@ CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj: D:/newdir/sports-e
   C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/api/Endpoint.hpp \
   C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/handler/AuthorizationHandler.hpp \
   C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/handler/ErrorHandler.hpp \
+  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/AllowCorsGlobal.hpp \
   C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/RequestInterceptor.hpp \
   C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/ResponseInterceptor.hpp \
   C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/url/mapping/Pattern.hpp \
@@ -3049,6 +3050,8 @@ C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/HttpRouter.hpp:
 C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/RequestInterceptor.hpp:
 
 C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/api/Endpoint.hpp:
+
+C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/AllowCorsGlobal.hpp:
 
 C:/msys64/ucrt64/include/pthread_compat.h:
 

@@ -301,6 +301,9 @@ CMakeFiles/sports_equipment_backend.dir/src/app/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_set.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multiset.h \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/HttpRouter.hpp \
+ C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/AllowCorsGlobal.hpp \
+ C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/ResponseInterceptor.hpp \
+ C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/web/server/interceptor/RequestInterceptor.hpp \
  D:/newdir/sports-equipment-architecture-project/backend/src/controller/AuthController.hpp \
  D:/newdir/sports-equipment-architecture-project/backend/src/dto/request/LoginRequestDto.hpp \
  C:/msys64/ucrt64/include/oatpp-1.3.0/oatpp/oatpp/codegen/DTO_define.hpp \
