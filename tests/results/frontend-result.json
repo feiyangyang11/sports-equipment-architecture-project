@@ -1,0 +1,65 @@
+﻿{
+    "generatedAt":  "2026-06-19 00:49:06 +08:00",
+    "baseUrl":  "http://127.0.0.1:5500",
+    "staticResources":  [
+                            {
+                                "path":  "/pages/login.html",
+                                "status":  200,
+                                "passed":  true
+                            },
+                            {
+                                "path":  "/pages/student-equipment.html",
+                                "status":  200,
+                                "passed":  true
+                            },
+                            {
+                                "path":  "/pages/student-reservations.html",
+                                "status":  200,
+                                "passed":  true
+                            },
+                            {
+                                "path":  "/pages/student-borrows.html",
+                                "status":  200,
+                                "passed":  true
+                            },
+                            {
+                                "path":  "/pages/admin-reservations.html",
+                                "status":  200,
+                                "passed":  true
+                            },
+                            {
+                                "path":  "/pages/admin-borrows.html",
+                                "status":  200,
+                                "passed":  true
+                            },
+                            {
+                                "path":  "/assets/css/app.css",
+                                "status":  200,
+                                "passed":  true
+                            },
+                            {
+                                "path":  "/assets/js/api.js",
+                                "status":  200,
+                                "passed":  true
+                            }
+                        ],
+    "browsers":  [
+                     {
+                         "browser":  "Edge",
+                         "available":  true,
+                         "version":  "149.0.4022.69",
+                         "exitCode":  0,
+                         "domContainsLoginForm":  true,
+                         "passed":  true
+                     },
+                     {
+                         "browser":  "Chrome",
+                         "available":  true,
+                         "version":  "149.0.7827.103",
+                         "exitCode":  0,
+                         "domContainsLoginForm":  true,
+                         "passed":  true
+                     }
+                 ],
+    "passed":  true
+}

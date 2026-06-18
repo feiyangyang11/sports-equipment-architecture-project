@@ -161,7 +161,7 @@ std::optional<std::uint64_t> BorrowRecordDAO::createFromApprovedReservation(
         "FROM reservation r "
         "INNER JOIN equipment e ON e.id = r.equipment_id "
         "WHERE r.id = " +
-        std::to_string(reservationId) + " LIMIT 1";
+        std::to_string(reservationId) + " LIMIT 1 FOR UPDATE";
 
     executeSql(connection.get(), loadSql);
     MysqlResult loadResult(mysql_store_result(connection.get()),
@@ -252,7 +252,7 @@ std::optional<std::uint64_t> BorrowRecordDAO::returnBorrowRecord(
     const std::string loadSql =
         "SELECT id, reservation_id, equipment_id, quantity, status "
         "FROM borrow_record WHERE id = " +
-        std::to_string(borrowRecordId) + " LIMIT 1";
+        std::to_string(borrowRecordId) + " LIMIT 1 FOR UPDATE";
     executeSql(connection.get(), loadSql);
 
     MysqlResult loadResult(mysql_store_result(connection.get()),

@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-19T00:49:00.976602+08:00",
+  "target": "http://127.0.0.1:8000/api/equipment?pageNo=1&pageSize=10",
+  "requests": 200,
+  "concurrency": 50,
+  "successCount": 200,
+  "successRate": 1.0,
+  "averageMs": 510.595,
+  "p95Ms": 1931.914,
+  "maxMs": 2005.531,
+  "wallSeconds": 2.081,
+  "threshold": {
+    "successRate": 1.0,
+    "averageMs": 2000,
+    "p95Ms": 3000
+  },
+  "passed": true,
+  "statusCounts": {
+    "200": 200
+  },
+  "errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-06-19T00:49:01.704049+08:00",
+  "requests": 20,
+  "reservationId": 2010,
+  "successfulBorrows": 1,
+  "statusCounts": {
+    "201": 1,
+    "409": 19
+  },
+  "stockBefore": 14,
+  "stockAfter": 13,
+  "stockRestored": 14,
+  "returnStatus": 200,
+  "onlyExpected201Or409": true,
+  "passed": true,
+  "criterion": "exactly one 201, all other responses 409, stock decreases once and returns to the original value"
+}

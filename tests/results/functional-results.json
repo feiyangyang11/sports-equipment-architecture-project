@@ -1,0 +1,212 @@
+﻿{
+    "generatedAt":  "2026-06-19 00:48:58 +08:00",
+    "baseUrl":  "http://127.0.0.1:8000",
+    "total":  29,
+    "passed":  29,
+    "failed":  0,
+    "cases":  [
+                  {
+                      "id":  "F-01",
+                      "description":  "Health endpoint returns 200",
+                      "passed":  true,
+                      "durationMs":  113.81,
+                      "detail":  "HTTP 200"
+                  },
+                  {
+                      "id":  "F-02",
+                      "description":  "Invalid password is rejected",
+                      "passed":  true,
+                      "durationMs":  65.45,
+                      "detail":  "HTTP 401"
+                  },
+                  {
+                      "id":  "F-03",
+                      "description":  "Student login succeeds",
+                      "passed":  true,
+                      "durationMs":  21.17,
+                      "detail":  "role=STUDENT"
+                  },
+                  {
+                      "id":  "F-04",
+                      "description":  "Second student login succeeds",
+                      "passed":  true,
+                      "durationMs":  16.6,
+                      "detail":  "role=STUDENT"
+                  },
+                  {
+                      "id":  "F-05",
+                      "description":  "Admin login succeeds",
+                      "passed":  true,
+                      "durationMs":  12.69,
+                      "detail":  "role=ADMIN"
+                  },
+                  {
+                      "id":  "F-06",
+                      "description":  "Token resolves current user",
+                      "passed":  true,
+                      "durationMs":  10.46,
+                      "detail":  "username=stu2026001"
+                  },
+                  {
+                      "id":  "F-07",
+                      "description":  "Equipment categories are public",
+                      "passed":  true,
+                      "durationMs":  15.96,
+                      "detail":  "categories=4"
+                  },
+                  {
+                      "id":  "F-08",
+                      "description":  "Equipment page query is public",
+                      "passed":  true,
+                      "durationMs":  28.38,
+                      "detail":  "total=7, equipment1001Stock=20"
+                  },
+                  {
+                      "id":  "F-09",
+                      "description":  "Invalid paging returns 400",
+                      "passed":  true,
+                      "durationMs":  2,
+                      "detail":  "HTTP 400"
+                  },
+                  {
+                      "id":  "F-10",
+                      "description":  "Missing authorization header is rejected",
+                      "passed":  true,
+                      "durationMs":  5.35,
+                      "detail":  "HTTP 400 from required Oat++ header binding"
+                  },
+                  {
+                      "id":  "F-11",
+                      "description":  "Student cannot access admin reservations",
+                      "passed":  true,
+                      "durationMs":  8.16,
+                      "detail":  "HTTP 403"
+                  },
+                  {
+                      "id":  "F-12",
+                      "description":  "Admin cannot create a student reservation",
+                      "passed":  true,
+                      "durationMs":  7.16,
+                      "detail":  "HTTP 403"
+                  },
+                  {
+                      "id":  "F-13",
+                      "description":  "Invalid reservation time returns 400",
+                      "passed":  true,
+                      "durationMs":  7.15,
+                      "detail":  "HTTP 400"
+                  },
+                  {
+                      "id":  "F-14",
+                      "description":  "Reservation over stock returns 409",
+                      "passed":  true,
+                      "durationMs":  11.04,
+                      "detail":  "HTTP 409"
+                  },
+                  {
+                      "id":  "F-15",
+                      "description":  "Student creates reservation",
+                      "passed":  true,
+                      "durationMs":  22.58,
+                      "detail":  "reservationId=2007"
+                  },
+                  {
+                      "id":  "F-16",
+                      "description":  "Another student cannot view the reservation",
+                      "passed":  true,
+                      "durationMs":  5.81,
+                      "detail":  "HTTP 404"
+                  },
+                  {
+                      "id":  "F-17",
+                      "description":  "Admin approves reservation",
+                      "passed":  true,
+                      "durationMs":  23.34,
+                      "detail":  "status=APPROVED"
+                  },
+                  {
+                      "id":  "F-18",
+                      "description":  "Repeated approval is rejected",
+                      "passed":  true,
+                      "durationMs":  7.54,
+                      "detail":  "HTTP 409"
+                  },
+                  {
+                      "id":  "F-19",
+                      "description":  "Admin creates borrow record",
+                      "passed":  true,
+                      "durationMs":  23.76,
+                      "detail":  "borrowId=3003"
+                  },
+                  {
+                      "id":  "F-20",
+                      "description":  "Borrow decreases stock exactly once",
+                      "passed":  true,
+                      "durationMs":  9.34,
+                      "detail":  "stock=19"
+                  },
+                  {
+                      "id":  "F-21",
+                      "description":  "Reservation cannot be borrowed twice",
+                      "passed":  true,
+                      "durationMs":  9.61,
+                      "detail":  "HTTP 409"
+                  },
+                  {
+                      "id":  "F-22",
+                      "description":  "Student can query own borrow record",
+                      "passed":  true,
+                      "durationMs":  11.12,
+                      "detail":  "borrowId=3003"
+                  },
+                  {
+                      "id":  "F-23",
+                      "description":  "Admin returns borrow record",
+                      "passed":  true,
+                      "durationMs":  17.44,
+                      "detail":  "status=RETURNED"
+                  },
+                  {
+                      "id":  "F-24",
+                      "description":  "Return restores stock",
+                      "passed":  true,
+                      "durationMs":  4.51,
+                      "detail":  "stock=20"
+                  },
+                  {
+                      "id":  "F-25",
+                      "description":  "Borrow record cannot be returned twice",
+                      "passed":  true,
+                      "durationMs":  4.93,
+                      "detail":  "HTTP 409"
+                  },
+                  {
+                      "id":  "F-26",
+                      "description":  "Student cancels pending reservation",
+                      "passed":  true,
+                      "durationMs":  32.27,
+                      "detail":  "reservationId=2008"
+                  },
+                  {
+                      "id":  "F-27",
+                      "description":  "Canceled reservation cannot be canceled twice",
+                      "passed":  true,
+                      "durationMs":  6.48,
+                      "detail":  "HTTP 409"
+                  },
+                  {
+                      "id":  "F-28",
+                      "description":  "Pending reservation cannot be borrowed",
+                      "passed":  true,
+                      "durationMs":  22.67,
+                      "detail":  "HTTP 409"
+                  },
+                  {
+                      "id":  "F-29",
+                      "description":  "Logout invalidates the old token",
+                      "passed":  true,
+                      "durationMs":  3.49,
+                      "detail":  "logout=200, oldToken=401"
+                  }
+              ]
+}

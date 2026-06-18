@@ -1,0 +1,11 @@
+﻿{
+    "generatedAt":  "2026-06-19 00:49:07 +08:00",
+    "testDatabase":  "sports_equipment_management_test",
+    "startupSeconds":  0.742,
+    "functionalExitCode":  0,
+    "performanceExitCode":  0,
+    "concurrencyExitCode":  0,
+    "frontendExitCode":  0,
+    "recoveryExitCode":  0,
+    "passed":  true
+}
